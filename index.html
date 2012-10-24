@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <style type="text/css">
+         #mess {
+            float: left;
+            width: 250px;
+            height: 250px;
+            overflow: auto;
+            background-color: #333;
+            color: white;
+            font-family: verdana;
+            font-size: 12px;
+         }
+         .msg {
+            color:light-gray;
+            font-size: normal;
+            font-size: 10px;
+         }
+      </style>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   </head>
+   <body>        
+        <fieldset>
+            <div id="mess">chat: </div>
+            <input type="text" id="text" />
+            <input type="button" onclick="javascript:sendmsg()" value="sendmessage" />
+        </fieldset>
+
+        <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+        <script src="js/pusher.js" type="text/javascript"></script>
+    </body>
+</html>
